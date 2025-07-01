@@ -28,3 +28,10 @@ if(age < 18){
 }
   console.log(ticketDiscount);
 
+let ticketDiscount2;
+
+if(age > 65){
+  ticketDiscount2 = priceTicket - (priceTicket * 40 / 100);
+}
+  console.log(ticketDiscount2);
+
