@@ -21,4 +21,10 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 let priceTicket =(0.21 * km);
 console.log(priceTicket);
 
+let ticketDiscount;
+
+if(age < 18){
+  ticketDiscount = priceTicket - (priceTicket * 20 / 100 );
+}
+  console.log(ticketDiscount);
 
