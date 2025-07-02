@@ -2,10 +2,10 @@
 
 //Il programma dovrà chiedere all'utente il numero di chilometri che vuole percorrere e l'età del passeggero.
 
-let age = prompt("inserite la vostra età ");
+let age = parseInt(prompt("inserite la vostra età "));
 console.log(age);
 
-let km = prompt("inserite il numero di km che volete percorrere ");
+let km = parseInt(prompt("inserite il numero di km che volete percorrere "));
 console.log(km);
 
 /*Sulla base di queste informazioni dovrà calcolare il prezzo totale del viaggio, secondo queste regole:
@@ -23,15 +23,17 @@ console.log(priceTicket);
 
 let ticketDiscount;
 
+
 if(age < 18){
   ticketDiscount = priceTicket - (priceTicket * 20 / 100 );
+  console.log(ticketDiscount.toFixed(2));
 }
-  console.log(ticketDiscount);
-
-let ticketDiscount2;
-
-if(age > 65){
-  ticketDiscount2 = priceTicket - (priceTicket * 40 / 100);
+else if(age > 65){
+  ticketDiscount = priceTicket - (priceTicket * 40 / 100);
+  console.log(ticketDiscount.toFixed(2));
 }
-  console.log(ticketDiscount2);
+else{
+   ticketDiscount = priceTicket;
+}
+  
 
